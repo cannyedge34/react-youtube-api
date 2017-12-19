@@ -9,7 +9,7 @@
     "build":
       "rimraf dist/ && NODE_ENV=production webpack --config webpack.prod.config.js --progress --hide-modules",
     "start":
-      "NODE_ENV=development webpack-dev-server --config webpack.dev.config.js --open --inline --hot",
+      "NODE_ENV=development webpack-dev-server --config webpack.dev.config.js",
     "test":
       "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
@@ -45,6 +45,7 @@
   "dependencies": {
     "axios": "^0.17.1",
     "babel-preset-stage-1": "^6.1.18",
+    "lodash": "^4.17.4",
     "materialize-css": "^0.100.2",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
