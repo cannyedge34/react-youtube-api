@@ -13,7 +13,8 @@
     "test":
       "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
-    "deploy": "npm run build && git subtree push --prefix dist origin gh-pages"
+    "deploy":
+      "rimraf dist/ && npm run build && git subtree push --prefix dist origin gh-pages"
   },
   "author": "",
   "license": "ISC",
